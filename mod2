@@ -1,0 +1,136 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Web Page</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+</head>
+<style>
+    /* css/style.css */
+.menu-section {
+  background-color: #f5f5f5;
+  padding: 20px;
+  /* css/style.css */
+.menu-section {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.navbar {
+  background-color: #333;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 24px;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-toggle {
+  border: none;
+}
+
+.navbar-toggle:focus {
+  outline: none;
+}
+
+.navbar-nav {
+  float: none;
+  margin: 0 auto;
+  display: table;
+}
+
+.navbar-nav > li {
+  display: inline-block;
+}
+
+.navbar-nav > li > a {
+  color: #fff;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+  background-color: transparent;
+}
+
+h1 {
+  color: #333;
+  font-size: 36px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .navbar-nav {
+    float: none;
+    display: none;
+    margin: 0;
+  }
+
+  .navbar-nav.visible-xs {
+    display: block;
+  }
+
+  .navbar-nav.visible-xs > li {
+    display: block;
+    text-align: center;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+
+  .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+}
+
+}
+
+</style>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Food, LLC</a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav visible-xs">
+          <li><a href="#">Chicken</a></li>
+          <li><a href="#">Beef</a></li>
+          <li><a href="#">Sushi</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <h1 class="text-center">Our Menu</h1>
+    <section class="menu-section">
+      <div class="row">
+        <div class="col-xs-12">
+          <!-- Your content here -->
+          <p>This is a really tall section with a lot of content...</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
