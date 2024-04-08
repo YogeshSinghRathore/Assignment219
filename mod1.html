@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<style>/* Resetting default margin and padding */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    /* Body styles */
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        padding: 20px;
+    }
+    
+    /* Page heading */
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    /* Section styles */
+    .section {
+        border: 1px solid black;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    
+    /* Section title styles */
+    .section-title {
+        background-color: lightblue;
+        color: black;
+        font-weight: bold;
+        padding: 5px 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    /* Media queries for responsive layout */
+    @media (min-width: 768px) {
+        /* Tablet view */
+        .section {
+            width: 48%;
+            float: left;
+            margin-right: 2%;
+        }
+    
+        .section:last-child {
+            margin-right: 0;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        /* Desktop view */
+        .section {
+            width: 31%;
+            float: left;
+            margin-right: 2%;
+        }
+    
+        .section:last-child {
+            margin-right: 0;
+        }
+    }
+    </style>
+<body>
+    <h1>My Responsive Layout</h1>
+
+    <section class="section">
+        <div class="section-title">Chicken</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod magna ut ligula volutpat fermentum.</p>
+    </section>
+
+    <section class="section">
+        <div class="section-title">Beef</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod magna ut ligula volutpat fermentum.</p>
+    </section>
+
+    <section class="section">
+        <div class="section-title">Sushi</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod magna ut ligula volutpat fermentum.</p>
+    </section>
+</body>
+</html>
